@@ -54,4 +54,18 @@ describe("A suite of test for the passwordChecker", function() {
         expect(main.noIPL("ahyeiplk;")).toBe(false);
     });
 
+    it("should return true if password valid", function() {
+        expect(main.noIPL("aze44rtyA$")).toBe(true);
+        expect(main.noIPL("teg2zkzbZA%s")).toBe(true);
+        expect(main.noIPL("augmu1$sinZ;")).toBe(true);
+    });
+
+    it("should return true if password is not valid", function() {
+        expect(main.noIPL("aijejbeke$")).toBe(false);
+        expect(main.noIPL("zbbmzz1EAu")).toBe(false);
+        expect(main.noIPL("ahyeiplkiipl")).toBe(false);
+    });
+
+
+
 });
