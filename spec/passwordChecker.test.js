@@ -12,5 +12,11 @@ describe("A suite of test for the passwordChecker", function() {
         expect(main.atLeastEight("a1b2c3d4")).toBe(true);
     });
 
+    it("should return false for a string with less than eight characters", function() {
+        expect(main.atLeastEight("1234567")).toBe(false);
+        expect(main.atLeastEight("azer")).toBe(false);
+        expect(main.atLeastEight("a1b2c3")).toBe(false);
+    });
+
 
 });
