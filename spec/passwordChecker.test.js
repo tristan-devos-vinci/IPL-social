@@ -1,4 +1,4 @@
-import { Main } from '../src/passwordChecker';
+import { Main } from '../src/passwordChecker.js';
 
 describe("A suite of test for the passwordChecker", function() {
     let main;
