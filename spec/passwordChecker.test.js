@@ -55,15 +55,15 @@ describe("A suite of test for the passwordChecker", function() {
     });
 
     it("should return true if password valid", function() {
-        expect(main.noIPL("aze44rtyA$")).toBe(true);
-        expect(main.noIPL("teg2zkzbZA%s")).toBe(true);
-        expect(main.noIPL("augmu1$sinZ;")).toBe(true);
+        expect(main.isValid("aze44rtyA$")).toBe(true);
+        expect(main.isValid("teg2zkzbZA%s")).toBe(true);
+        expect(main.isValid("augmu1$sinZ;")).toBe(true);
     });
 
-    it("should return true if password is not valid", function() {
-        expect(main.noIPL("aijejbeke$")).toBe(false);
-        expect(main.noIPL("zbbmzz1EAu")).toBe(false);
-        expect(main.noIPL("ahyeiplkiipl")).toBe(false);
+    it("should return false if password is not valid", function() {
+        expect(main.isValid("aijejbeke$")).toBe(false);
+        expect(main.isValid("zbbmzz1EAu")).toBe(false);
+        expect(main.isValid("ahyeiplkiipl")).toBe(false);
     });
 
 

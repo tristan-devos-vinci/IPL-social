@@ -28,6 +28,7 @@ export class Main {
 
 
     isValid(password) {
+        return this.atLeastEight(password) && this.specialCharacter(password) && this.atLeastOneNumber(password) && this.noIPL(password);
     }
         
 
