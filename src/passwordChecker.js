@@ -13,7 +13,13 @@ export class Main {
         return false;    }
 
     atLeastOneNumber(password) {
-
+        const numbers = "0123456789";
+        for (let i = 0; i < password.length; i++) {
+            if (numbers.includes(password[i])) {
+                return true;
+            }
+        }
+        return false;
     }
         
 
