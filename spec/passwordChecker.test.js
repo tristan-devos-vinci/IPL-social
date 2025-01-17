@@ -24,4 +24,10 @@ describe("A suite of test for the passwordChecker", function() {
         expect(main.specialCharacter("aa@ani")).toBe(true);
     });
 
+    it("should return false for a string without a special character", function() {
+        expect(main.specialCharacter("")).toBe(false);
+        expect(main.specialCharacter("12345678")).toBe(false);
+        expect(main.specialCharacter("abcdefgh")).toBe(false);
+    });
+
 });
