@@ -22,8 +22,8 @@ export class Main {
         return false;
     }
 
-    noIPL(password){
-        
+    noIPL(password) {
+        return !password.toLowerCase().includes("ipl");
     }
         
 

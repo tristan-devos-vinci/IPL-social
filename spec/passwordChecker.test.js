@@ -49,7 +49,7 @@ describe("A suite of test for the passwordChecker", function() {
     });
 
     it("should return false if IPL", function() {
-        expect(main.noIPL("")).toBe(false);
+        expect(main.noIPL("ipl")).toBe(false);
         expect(main.noIPL("IPL")).toBe(false);
         expect(main.noIPL("ahyeiplk;")).toBe(false);
     });
