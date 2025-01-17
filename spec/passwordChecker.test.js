@@ -18,5 +18,10 @@ describe("A suite of test for the passwordChecker", function() {
         expect(main.atLeastEight("a1b2c3")).toBe(false);
     });
 
+    it("should return true for a string with at least one special character", function() {
+        expect(main.specialCharacter("$")).toBe(true);
+        expect(main.specialCharacter("#")).toBe(true);
+        expect(main.specialCharacter("aa@ani")).toBe(true);
+    });
 
 });
