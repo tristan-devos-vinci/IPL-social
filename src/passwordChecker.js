@@ -4,10 +4,16 @@ export class Main {
     }
 
     specialCharacter(password) {
-        return /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(password);
-    }
+        const specialCharacters = "!@#$%^&*()_+-=[]{};':\"\\|,.<>/?";
+        for (let i = 0; i < password.length; i++) {
+            if (specialCharacters.includes(password[i])) {
+                return true;
+            }
+        }
+        return false;    }
 
     atLeastOneNumber(password) {
+
     }
         
 
