@@ -1,16 +1,14 @@
 # IPL Social
 
-## Auteur
-**Nom :** DE VOS  
-**Prénom :** Tristan  
-**Email :** tristan.devos@vinci.com
+## Author
+**Last Name:** DE VOS  
+**First Name:** Tristan  
+**Email:** tristan.devos@student.vinci.be
 
-## URL du projet
+## Project URL
 https://github.com/tristan-devos-vinci/IPL-social.git
 
 ## Description
 
 
-## Commande pour exécuter les tests
-```sh
-npm test
+## Command to run tests
