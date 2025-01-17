@@ -6,6 +6,9 @@ export class Main {
     specialCharacter(password) {
         return /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/.test(password);
     }
+
+    atLeastOneNumber(password) {
+    }
         
 
 }

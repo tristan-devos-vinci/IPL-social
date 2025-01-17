@@ -30,4 +30,16 @@ describe("A suite of test for the passwordChecker", function() {
         expect(main.specialCharacter("abcdefgh")).toBe(false);
     });
 
+    it("should return true for a string with at least one number", function() {
+        expect(main.atLeastOneNumber("a1")).toBe(true);
+        expect(main.atLeastOneNumber("1")).toBe(true);
+        expect(main.atLeastOneNumber("a1b2c3d4")).toBe(true);
+    });
+
+    it("should return false for a string without a number", function() {
+        expect(main.atLeastOneNumber("")).toBe(false);
+        expect(main.atLeastOneNumber("abcdefgh")).toBe(false);
+        expect(main.atLeastOneNumber("a")).toBe(false);
+    });
+
 });
