@@ -42,4 +42,16 @@ describe("A suite of test for the passwordChecker", function() {
         expect(main.atLeastOneNumber("a")).toBe(false);
     });
 
+    it("should return true if no IPL", function() {
+        expect(main.noIPL("")).toBe(true);
+        expect(main.noIPL("12345678")).toBe(true);
+        expect(main.noIPL("abcdefgh")).toBe(true);
+    });
+
+    it("should return false if IPL", function() {
+        expect(main.noIPL("")).toBe(false);
+        expect(main.noIPL("IPL")).toBe(false);
+        expect(main.noIPL("ahyeiplk;")).toBe(false);
+    });
+
 });

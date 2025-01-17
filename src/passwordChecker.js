@@ -21,6 +21,10 @@ export class Main {
         }
         return false;
     }
+
+    noIPL(password){
+        
+    }
         
 
 }
